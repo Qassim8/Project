@@ -14,7 +14,7 @@ body{
 /* Add Css Variables */
 :root{
     --main-color: #025939;
-    --overLay: #222c40c4;
+    --overLay: #222c4073;
     --alt-color: #038b59;
     --main-background: #f5ebeb;
     --mainTransition: 0.4s;
@@ -81,11 +81,19 @@ li{
 .first{
     position: relative;
     height: 100vh;
-    background-image: url(../images/back.jpg);
+    background-image: url(../images/baby4.jpg);
     background-size: cover;
     
 }
-.first::before{
+.second{
+    position: absolute;    
+    background-image: url(../images/baby5.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.first::before
+,.second::before{
     content: '';
     position: absolute;
     top: 0;
@@ -94,12 +102,6 @@ li{
     height: 100%;
     background-color: var(--overLay);
     
-}
-.second{
-    position: absolute;
-    background-color: var(--main-color);
-    height: 100vh;
-    width: 100%;
 }
 .first .login{
     display: flex;
@@ -329,7 +331,7 @@ li{
 @media(max-width: 650px){
     .dead
     {
-        height: 950px;
+        height: 1100px;
     }
     .borns
     ,.pay{
@@ -339,13 +341,15 @@ li{
 .borns .born-form
 ,.dead .death
 ,.pay .pay-form{
-    margin: 50px auto;
+    margin: 30px auto;
 }
 .borns .born-form span
-,.dead .death span{
-    margin: 8px 5px 5px;
+,.dead .death span
+,.pay .pay-form span{
+    margin: 8px 3px 5px 5px;
     font-size: 18px;
-    color: rgb(21, 22, 21);
+    font-weight: bold;
+    color: #8a8f94;
 }
 .borns .born-form input
 ,.dead .death input
@@ -354,7 +358,7 @@ li{
     padding: 8px;
     margin: 10px 0;
     font-weight: bold;
-    width: 300px;
+    width: 280px;
     max-width: 100%;
     border: none;
     outline: none;
@@ -424,9 +428,9 @@ li{
 .popup .fail-popup
 ,.popup .suc-popup{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%,-50%);
     background-color: white;
     padding: 30px;
     width: 270px;

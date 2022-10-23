@@ -10,7 +10,7 @@
         <!-- CSS FontAwesome File-->
         <link rel="stylesheet" href="../css/all.min.css">
         <!-- CSS Main File -->
-        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/min.css">
         <!-- Google Fonts Link -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +20,7 @@
     <div class="home">
             <ul class="header" dir="rtl">
                 <div class="container">
-                    <li><a href="../html/register.html">حساب </a></li>
-                    <li><a href="../html/pay.html">الدفع</a></li>
+                    <li><a href="../html/register.php">حساب </a></li>
                     <li><a href="#stats">الاحصائيات</a></li>
                 </div>
             </ul>
@@ -29,12 +28,12 @@
             <div class="services">
                 <h2>خدماتنا</h2>
                 <div class="srv-box">
-                    <a href="../html/dead.html">
+                    <a href="../html/dead.php">
                         <div class="box">
                             <i class="fa-solid fa-hands-praying fa-4x"></i>
                             <p>شهادة وفاة</p></div>
                     </a>
-                    <a href="../html/borns.html">
+                    <a href="../html/borns.php">
                         <div class="box">
                             <i class="fa-solid fa-baby fa-4x"></i>
                             <p>شهادة ميلاد</p>
